@@ -61,11 +61,11 @@ void BinaryTree::visitPostOrder()
     {
         if(this->leftChild)
         {
-            this->leftChild->visitInOrder();
+            this->leftChild->visitPostOrder();
         }
         if(this->rightChild)
         {
-            this->rightChild->visitInOrder();
+            this->rightChild->visitPostOrder();
         }
         cout << this->payload << " ";
     }
